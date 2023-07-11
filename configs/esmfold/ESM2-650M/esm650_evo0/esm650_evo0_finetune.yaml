@@ -1,0 +1,39 @@
+MODEL:
+  META_ARCHITECTURE: 'SSPF'
+  NUM_RECYCLE: 3
+  EMBEDDER:
+    NAME: 'ESM'
+    WEIGHT_KEY: 'pretrained_model/esm2_t33_650M_UR50D.pt'
+    FREEZE: True
+    NUM_LAYERS: 33
+    NUM_HEADS: 20
+    HIDDEN_DIM: 1280
+  TRUNK:
+    NAME: 'Evoformer'
+    NUM_BLOCKS: 0
+  FOLDING:
+    NAME: 'AlphafoldStructure'
+  HEAD:
+    TM:
+      ENABLED: True
+    VIOLATION:
+      LOSS_WEIGHT: 0.0
+SOLVER:
+  STEPS: (16000,)
+  MAX_ITER: 25000
+  BASE_LR: 0.0005
+  WARMUP_ITERS: 0
+  CLIP_GRADIENTS:
+    ENABLED: True
+    CLIP_TYPE: norm
+    CLIP_VALUE: 0.1
+DATASETS:
+  TRAIN: ("pdb", "af2_uniref50",)
+  TEST: ("cameo",)
+DATALOADER:
+  SAMPLER_TRAIN: 'WeightedTrainingSampler'
+INPUT:
+  CROP:
+    SIZE: 384
+TEST:
+  EVAL_PERIOD: 5000

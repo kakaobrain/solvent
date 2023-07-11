@@ -1,0 +1,7 @@
+# output dir
+output
+
+# compilation and distribution
+__pycache__
+*.pyc
+

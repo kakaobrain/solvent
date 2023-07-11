@@ -1,0 +1,2 @@
+datasets/afdb/proteomes/proteome-tax_id-100-0_v3.tar
+datasets/afdb/proteomes/proteome-tax_id-1000001-0_v3.tar

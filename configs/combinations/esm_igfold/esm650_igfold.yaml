@@ -1,0 +1,38 @@
+MODEL:
+  META_ARCHITECTURE: 'IGFold'
+  NUM_RECYCLE: 0
+  EMBEDDER:
+    NAME: 'ESM'
+    WEIGHT_KEY: 'pretrained_model/esm2_t33_650M_UR50D.pt'
+    FREEZE: True
+    NUM_LAYERS: 33
+    NUM_HEADS: 20
+    HIDDEN_DIM: 1280
+  TRUNK:
+    NAME: 'IGFoldTrunk'
+    NUM_BLOCKS: 4
+    MSA_DIM: 64
+    PAIR_DIM: 64
+    SINGLE_DIM: 64
+  FOLDING:
+    NAME: 'IGFoldStructure'
+    NUM_BLOCKS: 3
+    IPA:
+      NUM_HEAD: 8
+  HEAD:
+    NAME: 'IGFoldHeads'
+SOLVER:
+  OPTIM: 'RAdam'
+  MAX_ITER: 2000000
+  BASE_LR: 0.0005
+  LR_SCHEDULER_NAME: 'WarmupCosineLR'
+  WARMUP_ITERS: 0
+  CHECKPOINT_PERIOD: 100000
+DATASETS:
+  TRAIN: ("sabdab_20210331",)
+  TEST: ("sabdab_igfold",)
+INPUT:
+  CROP:
+    ENABLED: False
+TEST:
+  EVAL_PERIOD: 100000

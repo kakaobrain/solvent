@@ -1,0 +1,53 @@
+MODEL:
+  META_ARCHITECTURE: 'SSPF'
+  NUM_RECYCLE: 3
+  BLOCKS_PER_CKPT: null
+  GATING : True
+  EMBEDDER:
+    NAME: 'OMEGAPLM'
+    WEIGHT_KEY: 'pretrained_model/OmegaPLM.pt'
+    FREEZE: True
+    NUM_LAYERS: 66
+    NUM_HEADS: 2
+    HIDDEN_DIM: 1280
+    MASKED_ALPHABET : 23
+    PADDING_IDX : 21
+    PROJECT_DIM: 2560
+    ATTN_DIM: 256
+    NUM_RELPOS : 129
+    NUM_PSEUDO_MSA : 0
+    MASKED_RATIO : 0.
+  TRUNK:
+    NAME: 'GeoformerLite'
+    NUM_BLOCKS: 2
+    STRUCT_EMB:
+      ENABLED: True
+  FOLDING:
+    NAME: 'AlphafoldStructure'
+  HEAD:
+    TM:
+      ENABLED: True
+    VIOLATION:
+      LOSS_WEIGHT: 0.0
+SOLVER:
+  AMP:
+    ENABLED: True
+  STEPS: (80000,)
+  MAX_ITER: 125000
+  BASE_LR: 0.001
+  GAMMA: 0.95
+  CLIP_GRADIENTS:
+    ENABLED: True
+    CLIP_TYPE: norm
+    CLIP_VALUE: 0.1
+  CHECKPOINT_PERIOD: 20000
+DATASETS:
+  TRAIN: ("pdb", "af2_uniref50",)
+  TEST: ("cameo",)
+INPUT:
+  CROP:
+    SIZE: 256
+TEST:
+  EVAL_PERIOD: 125000
+DATALOADER:
+  SAMPLER_TRAIN: 'WeightedTrainingSampler'

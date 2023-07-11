@@ -1,0 +1,110 @@
+===============================================================================
+Detectron2' Apache License 2.0
+===============================================================================
+The implementation code is based on the implementation in Detectron2
+(https://github.com/facebookresearch/detectron2).
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Copyright (c) 2021 Facebook
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+
+===============================================================================
+OpenFold' Apache License 2.0
+===============================================================================
+The implementation code is based on the implementation in OpenFold
+(https://github.com/aqlaboratory/openfold).
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Copyright 2021 AlQuraishi Laboratory
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+===============================================================================
+OmegaFold' Apache License 2.0
+===============================================================================
+The implementation code is based on the implementation in OmegaFold
+(https://github.com/HeliXonProtein/OmegaFold).
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Copyright 2022 HeliXon Limited
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+===============================================================================
+IgFold' JHU Academic Software License
+===============================================================================
+The implementation code is based on the implementation in IgFold
+(https://github.com/Graylab/IgFold).
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Copyright 2022 The Johns Hopkins University
+
+The requirement to acknowledge the copyright of JHU as follows:
+“© 2022 The Johns Hopkins University” and copyrights of any 
+incorporated third party software as described in the associated documentation.
+Redistribution and use in source and binary forms, with or without modification, 
+are permitted provided that the source code must retain the above copyright notice, 
+and these terms and conditions.
+Neither the name of JHU nor its affiliates may be used to endorse or promote 
+products derived from this Software without specific prior written permission 
+from an authorized JHU representative.
+
+THIS SOFTWARE IS PROVIDED BY JHU "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, 
+INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND 
+FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL JHU BE LIABLE 
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; 
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT 
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, 
+EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. LICENSEE AGREES TO DEFEND, 
+INDEMNIFY AND HOLD HARMLESS JHU FOR ANY CLAIMS ARISING FROM LICENSEE’S USE OF 
+THE SOFTWARE TO THE FULLEST EXTENT PERMITTED BY LAW.
+
+===============================================================================
+FastFold' Apache License 2.0
+===============================================================================
+The implementation code is based on the implementation in FastFold
+(https://github.com/hpcaitech/FastFold).
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Copyright 2022 HPC-AI Technology Inc.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
