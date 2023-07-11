@@ -81,7 +81,7 @@ python demo/demo.py \
 To make Solvent working as framework, we refer the pipeline of [Detectron2](https://github.com/facebookresearch/detectron2). We represent individual method using the implementation of [AlphaFold2](https://github.com/deepmind/alphafold), [OpenFold](https://github.com/aqlaboratory/openfold), [IgFold](https://github.com/Graylab/IgFold), and [OmegaFold](https://github.com/HeliXonProtein/OmegaFold).
 
 ## Citation
-The description of Solvent is in the technical report below. 
+The description of Solvent is in the [technical report](https://arxiv.org/abs/2307.04603) below. 
 ```bibtex
 @misc{lee2023solvent,
       title={Solvent: A Framework for Protein Folding}, 
