@@ -80,6 +80,9 @@ python demo/demo.py \
 
 To make Solvent working as framework, we refer the pipeline of [Detectron2](https://github.com/facebookresearch/detectron2). We represent individual method using the implementation of [AlphaFold2](https://github.com/deepmind/alphafold), [OpenFold](https://github.com/aqlaboratory/openfold), [IgFold](https://github.com/Graylab/IgFold), and [OmegaFold](https://github.com/HeliXonProtein/OmegaFold).
 
+## Acknowledgements
+We acknowledge the contributions of the Language Model Engineering Team at Kakao Brain, who have optimized Solvent. These optimizations make Solvent efficient in training speed and memory, so researchers can easily tap larger models. Their support has been essential in achieving the outcomes presented in this work.
+
 ## Citation
 The description of Solvent is in the [technical report](https://arxiv.org/abs/2307.04603) below. 
 ```bibtex
