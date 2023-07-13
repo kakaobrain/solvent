@@ -88,7 +88,7 @@ The description of Solvent is in the [technical report](https://arxiv.org/abs/23
 ```bibtex
 @misc{lee2023solvent,
       title={Solvent: A Framework for Protein Folding}, 
-      author={Jaemyung Lee and Jaehoon Kim and Hasun Yu and Youhan Lee},
+      author={Jaemyung Lee and Kyeongtak Han and Jaehoon Kim and Hasun Yu and Youhan Lee},
       year={2023},
       eprint={2307.04603},
       archivePrefix={arXiv},
