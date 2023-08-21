@@ -107,3 +107,86 @@ datasets/
             /chain_data_cache.json
         sabdab_summary_all.tsv
 ```
+
+## Cumstom Datasets
+You can train or evaluate on your custom data after register datasets<br>
+The steps of registration are as follows
+
+### CASP 14
+1. Download pdb files.
+    * Download `casp14.targets.T.public`[https://predictioncenter.org/download_area/CASP14/targets/] datasets 
+    * Uncomporess tar.gz files and locate at `datasets/casp14`
+
+2. Preprocess casp14 datasets
+    ```
+    python tools/preprocess_casp14_datasets.py \
+        --pdb_dir datasets/casp14/natives \
+        --output_dir datasets/casp14/parsed_data
+    ```
+
+3. Expected dataset structure for CASP14
+    ```
+    datasets/
+    casp14/
+        natives/
+        parsed_data/
+        chain_data_cache.json
+    ```
+
+4. Register CASP14 datasets in tne Solvent as in `solvent/data/datasets/casp14.py`
+
+### De novo
+1. Download mmcif files.
+    ```
+    python datasets/download_target.py
+        --target_list_file datasets/denovo_target.txt \
+        --output_dir datasets/denovo
+    ```
+
+2. Preprocess De novo datasets
+    ```
+    python tools/preprocess_datasets.py \
+        --pdb_dir datasets/denovo/natives \
+        --fasta_dir datasets/denovo/fastas \
+        --output_dir datasets/denovo/parsed_data
+    ```
+
+3. Expected dataset structure for De novo
+    ```
+    datasets/
+    denovo/
+        natives/
+        fastas/
+        parsed_data/
+        chain_data_cache.json
+    ```
+
+4. Register De novo datasets in tne Solvent as in `solvent/data/datasets/denovo.py`
+
+### Orphan
+1. Download mmcif files.
+    ```
+    python datasets/download_target.py
+        --target_list_file datasets/orphan_target.txt \
+        --output_dir datasets/orphan
+    ```
+
+2. Preprocess Orphan datasets
+    ```
+    python tools/preprocess_datasets.py \
+        --pdb_dir datasets/orphan/natives \
+        --fasta_dir datasets/orphan/fastas \
+        --output_dir datasets/orphan/parsed_data
+    ```
+
+3. Expected dataset structure for Orphan
+    ```
+    datasets/
+    orphan/
+        natives/
+        fastas/
+        parsed_data/
+        chain_data_cache.json
+    ```
+
+4. Register De novo datasets in tne Solvent as in `solvent/data/datasets/orphan.py`
