@@ -35,9 +35,10 @@ def truncate_chain(pdb_string, chain, limit, chain_id):
         is_atom = line.startswith("ATOM")
         if not is_atom:
             continue
-
-        residx = int(line[22:26])
-        is_target_chain = line[21] == chain
+        # Sliding index for serial_number>=100000
+        slideIdx = 0 if len(line.split()[1])<6 else len(line.split()[1])-5
+        residx = int(line[22+slideIdx:26+slideIdx])
+        is_target_chain = line[21+slideIdx] == chain
         is_fv = residx <= limit
         if (is_atom and is_target_chain and is_fv):
 
@@ -47,7 +48,7 @@ def truncate_chain(pdb_string, chain, limit, chain_id):
                 # we use only first pairs
                 break
 
-            truncated_string += line[:21] + chain_id + line[22:]
+            truncated_string += line[:21+slideIdx] + chain_id + line[22+slideIdx:]
             truncated_string += "\n"
 
             prev = cur
