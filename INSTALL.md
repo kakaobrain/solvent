@@ -15,7 +15,7 @@
 - install [xformers](https://github.com/facebookresearch/xformers) and [triton](https://github.com/openai/triton)
     ```
     pip install ninja
-    pip install -v -U git+https://github.com/facebookresearch/xformers.git@main#egg=xformers
+    pip install -v -U git+https://github.com/facebookresearch/xformers.git@b31f4a1#egg=xformers
     pip install -U --index-url https://aiinfra.pkgs.visualstudio.com/PublicPackages/_packaging/Triton-Nightly/pypi/simple/ triton-nightly
     ```
 - installation via apt-get
