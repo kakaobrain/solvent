@@ -1,5 +1,9 @@
 # output dir
 output
+datasets
+pretrained_model
+model.pt
+model2.pt
 
 # compilation and distribution
 __pycache__
